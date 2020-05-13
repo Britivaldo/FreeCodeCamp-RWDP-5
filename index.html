@@ -4,24 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreeCodeCamp-RWDP-5</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: red;
+        height: 50px;
+        background: #be3144;
+      }
+      nav ul{
+        list-style: none;
+        
+      }
+      nav ul li { 
+        display: inline; 
+      }
+      nav ul li a {
+          padding: 2px 10px;
+          display: inline-block;
+          color: #333;
+          text-decoration: none;
+      }
+      #welcome-section {
+        height: 521px;
+        margin-top: 50px;
+        border: 1px solid 
+      }
+    </style>
 </head>
 <body>
-    <nav id="navbar">
-  
-    </nav>
-    <section id="welcome-section">
-      <h1>Hey, I am Brito</h1>
-      <p>a web developer</p>
-    </section>
-    <section id="projects">
-      <div>
-        <a class="project-tile"></a>
-        <a class="project-tile"></a>
-        <a class="project-tile"></a>
-        <a class="project-tile"></a>
-      </div>
-      
-    </section>
-    
+  <nav id="navbar">
+    <ul>
+      <li>
+        <a href="#welcome-section">About</a>
+      </li>
+      <li>
+        <a href="#projects">Work</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <section id="welcome-section">
+    <h1>Hey, I am Brito</h1>
+    <p>a web developer</p>
+  </section>
+  <section id="projects">
+    <div>
+      <a class="project-tile"></a>
+      <a class="project-tile"></a>
+      <a class="project-tile"></a>
+      <a class="project-tile"></a>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Let's work together...
+  How do you take your coffee?</h2>
+    <p>How do you take your coffee?</p>
+    <ul>
+      <li>
+        <a href=""></a>
+      </li>
+      <li>
+        <a id="profile-link" href="https://github.com/Britivaldo" target="_blank"> github</a>
+      </li>
+      <li>
+        <a href=""></a>
+      </li>
+      <li>
+        <a href=""></a>
+      </li>
+    </ul>
+  </section>
 </body>
 </html>
