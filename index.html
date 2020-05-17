@@ -57,6 +57,14 @@
         font-style: italic;
         color: #be3144;
       }
+      #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+      }
 
       #projects{
         text-align: center;
@@ -65,8 +73,8 @@
       }
       .grid-container {
         display: grid;
-        grid-gap: 40px;
-        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        grid-template-columns: auto auto auto;
         /* background-color: #2196F3; */
         /* padding: 10px; */
       }
@@ -76,6 +84,11 @@
         /* padding: 20px; */
         font-size: 30px;
         text-align: center;
+      }
+      .project-title {
+        height: calc(100% - 6.8rem);
+        width: 100%;
+        object-fit: cover;
       }
     </style>
 </head>
@@ -94,23 +107,23 @@
     </ul>
   </nav>
   <section id="welcome-section">
-    <h1>Hey, I am Brito</h1>
+    <h1>Hey, I am Britivaldo</h1>
     <p>a web developer</p>
   </section>
   <section id="projects">
     <h2>These are some of my projects</h2>
     <div class="grid-container">
       <a class="project-tile grid-item">
-        <img src="tribute.png" width="320" height="205"/>
+        <img src="tribute.png" width="402" height="310"/>
       </a>
       <a class="project-tile grid-item">
-        <img src="technical.png" width="320" height="205"/>
+        <img src="technical.png" width="402" height="310"/>
       </a>
       <a class="project-tile grid-item">
-        <img src="survey.png" width="320" height="205"/>
+        <img src="survey.png" width="402" height="310"/>
       </a>
       <a class="project-tile grid-item">
-        <img src="product.png" width="320" height="205"/>
+        <img src="product.png" width="402" height="310"/>
       </a>
     </div>
   </section>
