@@ -10,9 +10,7 @@
         padding: 0;
         font-family: arial, sans-serif;
       }
-      project-tile {
-        
-      }
+
       h1 {
         font-size: 6rem;
       }
@@ -59,6 +57,26 @@
         font-style: italic;
         color: #be3144;
       }
+
+      #projects{
+        text-align: center;
+        padding: 10rem 2rem;
+        background: #45567d;
+      }
+      .grid-container {
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: auto auto;
+        /* background-color: #2196F3; */
+        padding: 10px;
+      }
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        /* border: 1px solid rgba(0, 0, 0, 0.8); */
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
     </style>
 </head>
 <body>
@@ -80,17 +98,18 @@
     <p>a web developer</p>
   </section>
   <section id="projects">
-    <div>
-      <a class="project-tile">
+    <h2>These are some of my projects</h2>
+    <div class="grid-container">
+      <a class="project-tile grid-item">
         <img src="tribute.png" width="320" height="205"/>
       </a>
-      <a class="project-tile">
+      <a class="project-tile grid-item">
         <img src="technical.png" width="320" height="205"/>
       </a>
-      <a class="project-tile">
+      <a class="project-tile grid-item">
         <img src="survey.png" width="320" height="205"/>
       </a>
-      <a class="project-tile">
+      <a class="project-tile grid-item">
         <img src="product.png" width="320" height="205"/>
       </a>
     </div>
