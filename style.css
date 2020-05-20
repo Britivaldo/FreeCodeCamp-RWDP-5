@@ -15,9 +15,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: red;
     height: 70px;
-    background: #be3144;
+    /* background: #be3144; */
+    background-color: #7159c1;
+    z-index: 1;
   }
   nav ul{
     list-style: none;
@@ -35,22 +36,30 @@
       color: white;
   }
   #welcome-section {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100;
+    width: 100%;
     height: 100vh;
     background-color: #000;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     color: white;
+    overflow: hidden;
+  }
+
+  section div {
+
+    overflow: hidden;
   }
 
   #welcome-section  p{
     font-size:  3rem;
     font-weight: 200;
     font-style: italic;
-    color: #be3144;
+    /* color: #be3144; */
+    color: #7159c1;
   }
   #contact {
     display: flex;
@@ -59,13 +68,15 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid #7159c1;
   }
 
   #projects{
     text-align: center;
     padding: 10rem 2rem;
-    background: #45567d;
+    /* background: #45567d; */
+    background-color: #7159c1;
+
     
   }
   .grid-container {
@@ -92,4 +103,25 @@
   }
   #contact ul li a {
     text-decoration: none;
+  }
+
+  .squares li {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.25);
+      display: block;
+      animation: up 2s infinite alternate;
+  }
+
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-600px) rotate(960deg);
+    }
   }
